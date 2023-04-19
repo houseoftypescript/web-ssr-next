@@ -1,9 +1,9 @@
 {
-  "name": "@frontend-server/next",
+  "name": "next-tempalte",
   "version": "0.0.1",
   "description": "Next.js Template",
   "main": "index.js",
-  "repository": "git@github.com:houseoftypescript/frontend-template.git",
+  "repository": "git@github.com:houseoftypescript/next-template.git",
   "author": "hieudoanm <hieumdoan@gmail.com>",
   "license": "GNU GPL 3.0",
   "private": true,
