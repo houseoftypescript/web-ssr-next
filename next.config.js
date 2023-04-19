@@ -2,6 +2,12 @@
 
 const isProd = process.env.NODE_ENV === 'production';
 
+const withPWA = require('next-pwa')({
+  dest: 'public',
+  register: true,
+  skipWaiting: true,
+  disable: !isProd,
+});
 const nextConfig = {
   reactStrictMode: true,
   basePath: isProd ? '/nextjs-template' : undefined,
@@ -9,4 +15,4 @@ const nextConfig = {
   images: { unoptimized: true },
 };
 
-module.exports = nextConfig;
+module.exports = withPWA(nextConfig);
